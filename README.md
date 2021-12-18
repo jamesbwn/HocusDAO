@@ -1,2 +1,2 @@
 # HocusDAO
-This is the Hocus DAO repo on avax
+This is the Hocus DAO repo on avax!
