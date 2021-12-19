@@ -6,14 +6,15 @@ import { ReactComponent as StakeIcon } from "../../assets/icons/stake.svg";
 import { ReactComponent as BondIcon } from "../../assets/icons/bond.svg";
 import { ReactComponent as GlobeIcon } from "../../assets/icons/globe.svg";
 import { ReactComponent as DashboardIcon } from "../../assets/icons/dashboard.svg";
-import { ReactComponent as PAPAIcon } from "../../assets/icons/papa-nav-header1.svg";
+import { ReactComponent as HocusIcon } from "../../assets/icons/hocus-nav-header.svg";
+// import { ReactComponent as HocusIcon } from "../../assets/icons/papa-nav-header1.svg";
 import { trim, shorten } from "../../helpers";
 import { useAddress, useWeb3Context } from "src/hooks/web3Context";
 import useBonds from "../../hooks/Bonds";
 import { Paper, Link, Box, Typography, SvgIcon } from "@material-ui/core";
 import { Skeleton } from "@material-ui/lab";
 import "./sidebar.scss";
-// import PAPAIcon from "src/assets/icons/logo.png";
+// import HocusIcon from "src/assets/icons/logo.png";
 
 function NavContent() {
   const [isActive] = useState();
@@ -46,11 +47,11 @@ function NavContent() {
             <Link href="https://papadao.co" target="_blank">
               <SvgIcon
                 color="primary"
-                component={PAPAIcon}
-                viewBox="30 10 100 90"
+                component={HocusIcon}
+                viewBox="0 10 160 160"
                 style={{ minWdth: "151px", minHeight: "165px", width: "151px" }}
               />
-              <div className="wallet-link f-32">PAPA DAO</div>
+              <div className="wallet-link f-32">Hocus DAO</div>
             </Link>
             {address && (
               <div className="wallet-link">

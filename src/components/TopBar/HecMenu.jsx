@@ -20,7 +20,7 @@ const addTokenToWallet = (tokenSymbol, tokenAddress) => async () => {
 
     // } ? PAPAImg : sPAPAImg;
     switch (tokenSymbol) {
-      case "PAPA":
+      case "HOCUS":
         tokenPath = PAPAImg;
         decimals = 9;
         break;
@@ -74,7 +74,7 @@ function HecMenu() {
     >
       <Button id="hec-menu-button" size="large" variant="contained" color="secondary" title="HEC" aria-describedby={id}>
         <SvgIcon component={InfoIcon} color="primary" />
-        <Typography>PAPA</Typography>
+        <Typography>Hocus</Typography>
       </Button>
 
       <Popper id={id} open={open} anchorEl={anchorEl} placement="bottom-start" transition>
@@ -119,7 +119,7 @@ function HecMenu() {
                           viewBox="0 0 32 32"
                           style={{ height: "25px", width: "25px" }}
                         />
-                        <Typography variant="body1">PAPA</Typography>
+                        <Typography variant="body1">Hocus</Typography>
                       </Button>
                       <Button variant="contained" color="secondary" onClick={addTokenToWallet("sPAPA", SPAPA_ADDRESS)}>
                         <SvgIcon
@@ -127,7 +127,7 @@ function HecMenu() {
                           viewBox="0 0 100 100"
                           style={{ height: "25px", width: "25px" }}
                         />
-                        <Typography variant="body1">sPAPA</Typography>
+                        <Typography variant="body1">sHocus</Typography>
                       </Button>
                     </Box>
                   </Box>

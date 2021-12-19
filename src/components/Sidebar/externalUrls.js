@@ -24,12 +24,12 @@ const externalUrls = [
   //   icon: <MonetizationOnOutlined viewBox="0 0 20 24" />,
   // },
   {
-    title: "PAPA Bank",
+    title: "Hocus Bank",
     label: "(Coming soon)",
     icon: <AccountBalanceOutlined viewBox="0 0 20 24" />,
   },
   {
-    title: "PAPA Pro",
+    title: "Hocus Pro",
     label: "(Coming soon)",
     icon: <MonetizationOnOutlined viewBox="0 0 20 24" />,
   },
