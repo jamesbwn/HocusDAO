@@ -123,11 +123,11 @@ function Stake() {
     // 1st catch if quantity > balance
     let gweiValue = ethers.utils.parseUnits(value, "gwei");
     if (action === "stake" && gweiValue.gt(ethers.utils.parseUnits(hecBalance, "gwei"))) {
-      return dispatch(error("You cannot stake more than your PAPA balance."));
+      return dispatch(error("You cannot stake more than your Hocus balance."));
     }
 
     if (action === "unstake" && gweiValue.gt(ethers.utils.parseUnits(unstakedVal, "gwei"))) {
-      return dispatch(error("You cannot unstake more than your sPAPA balance."));
+      return dispatch(error("You cannot unstake more than your sHocus balance."));
     }
     await dispatch(
       changeStake({
@@ -243,7 +243,7 @@ function Stake() {
                           Current Index
                         </Typography>
                         <Typography variant="h4">
-                          {currentIndex ? <>{trim(currentIndex, 2)} PAPA</> : <Skeleton width="150px" />}
+                          {currentIndex ? <>{trim(currentIndex, 2)} Hocus</> : <Skeleton width="150px" />}
                         </Typography>
                       </div>
                     </Grid>
@@ -257,7 +257,7 @@ function Stake() {
                     <div className="wallet-menu" id="wallet-menu">
                       {modalButton}
                     </div>
-                    <Typography variant="h6">Connect your wallet to stake PAPA</Typography>
+                    <Typography variant="h6">Connect your wallet to stake Hocus</Typography>
                   </div>
                 ) : (
                   <>
@@ -283,15 +283,15 @@ function Stake() {
                               <Typography variant="body1" className="stake-note" color="textSecondary">
                                 {view === 0 ? (
                                   <>
-                                    First time staking <b>PAPA</b>?
+                                    First time staking <b>Hocus</b>?
                                     <br />
-                                    Please approve PAPA Dao to use your <b>PAPA</b> for staking.
+                                    Please approve Hocus Dao to use your <b>Hocus</b> for staking.
                                   </>
                                 ) : (
                                   <>
-                                    First time unstaking <b>sPAPA</b>?
+                                    First time unstaking <b>sHocus</b>?
                                     <br />
-                                    Please approve PAPA Dao to use your <b>sPAPA</b> for unstaking.
+                                    Please approve Hocus Dao to use your <b>sHocus</b> for unstaking.
                                   </>
                                 )}
                               </Typography>
@@ -334,7 +334,7 @@ function Stake() {
                                 onChangeStake("stake", false);
                               }}
                             >
-                              {txnButtonText(pendingTransactions, "staking", "Stake PAPA")}
+                              {txnButtonText(pendingTransactions, "staking", "Stake Hocus")}
                             </Button>
                           ) : (
                             <Button
@@ -363,7 +363,7 @@ function Stake() {
                                 onChangeStake("unstake", false);
                               }}
                             >
-                              {txnButtonText(pendingTransactions, "unstaking", "Unstake PAPA")}
+                              {txnButtonText(pendingTransactions, "unstaking", "Unstake Hocus")}
                             </Button>
                           ) : (
                             <Button
@@ -386,21 +386,21 @@ function Stake() {
                       <div className="data-row">
                         <Typography variant="body1">Your Balance</Typography>
                         <Typography variant="body1">
-                          {isAppLoading ? <Skeleton width="80px" /> : <>{trim(hecBalance, 4)} PAPA</>}
+                          {isAppLoading ? <Skeleton width="80px" /> : <>{trim(hecBalance, 4)} Hocus</>}
                         </Typography>
                       </div>
 
                       <div className="data-row">
                         <Typography variant="body1">Your Staked Balance</Typography>
                         <Typography variant="body1">
-                          {isAppLoading ? <Skeleton width="80px" /> : <>{trimmedBalance} sPAPA</>}
+                          {isAppLoading ? <Skeleton width="80px" /> : <>{trimmedBalance} sHocus</>}
                         </Typography>
                       </div>
 
                       <div className="data-row">
                         <Typography variant="body1">Next Reward Amount</Typography>
                         <Typography variant="body1">
-                          {isAppLoading ? <Skeleton width="80px" /> : <>{nextRewardValue} sPAPA</>}
+                          {isAppLoading ? <Skeleton width="80px" /> : <>{nextRewardValue} sHocus</>}
                         </Typography>
                       </div>
 
@@ -442,7 +442,7 @@ function Stake() {
                       <div className="wallet-menu" id="wallet-menu">
                         {modalButton}
                       </div>
-                      <Typography variant="h6">Connect your wallet to stake PAPA</Typography>
+                      <Typography variant="h6">Connect your wallet to stake Hocus</Typography>
                     </div>
                   ) : (
                     <>
@@ -457,9 +457,9 @@ function Stake() {
                               <Box className="help-text">
                                 <Typography variant="body1" className="stake-note" color="textSecondary">
                                   <>
-                                    First time unstaking <b>sPAPA</b>?
+                                    First time unstaking <b>sHocus</b>?
                                     <br />
-                                    Please approve PAPA Dao to use your <b>sPAPA</b> for unstaking.
+                                    Please approve Hocus Dao to use your <b>sHocus</b> for unstaking.
                                   </>
                                 </Typography>
                               </Box>
@@ -501,7 +501,7 @@ function Stake() {
                                   onChangeStake("unstake", true);
                                 }}
                               >
-                                {txnButtonText(pendingTransactions, "unstaking", "Unstake PAPA")}
+                                {txnButtonText(pendingTransactions, "unstaking", "Unstake Hocus")}
                               </Button>
                             ) : (
                               <Button
@@ -524,14 +524,14 @@ function Stake() {
                         <div className="data-row">
                           <Typography variant="body1">Your Staked Balance</Typography>
                           <Typography variant="body1">
-                            {isAppLoading ? <Skeleton width="80px" /> : <>{oldtrimmedBalance} sPAPA</>}
+                            {isAppLoading ? <Skeleton width="80px" /> : <>{oldtrimmedBalance} sHocus</>}
                           </Typography>
                         </div>
 
                         <div className="data-row">
                           <Typography variant="body1">Next Reward Amount</Typography>
                           <Typography variant="body1">
-                            {isAppLoading ? <Skeleton width="80px" /> : <>{oldnextRewardValue} sPAPA</>}
+                            {isAppLoading ? <Skeleton width="80px" /> : <>{oldnextRewardValue} sHocus</>}
                           </Typography>
                         </div>
 

@@ -127,7 +127,7 @@ function TreasuryDashboard() {
 
               <Box className="metric price">
                 <Typography variant="h6" color="textSecondary">
-                  PAPA Price
+                  Hocus Price
                 </Typography>
                 <Typography variant="h5">
                   {/* appleseed-fix */}
@@ -137,10 +137,10 @@ function TreasuryDashboard() {
 
               <Box className="metric wsoprice">
                 <Typography variant="h6" color="textSecondary">
-                  wsPAPA Price
+                  wsHocus Price
                   <InfoTooltip
                     message={
-                      "wsPAPA = sPAPA * index\n\nThe price of wsPAPA is equal to the price of PAPA multiplied by the current index"
+                      "wsHocus = sHocus * index\n\nThe price of wsHocus is equal to the price of Hocus multiplied by the current index"
                     }
                   />
                 </Typography>
@@ -165,7 +165,7 @@ function TreasuryDashboard() {
 
               <Box className="metric bpo">
                 <Typography variant="h6" color="textSecondary">
-                  Backing per PAPA
+                  Backing per Hocus
                 </Typography>
                 <Typography variant="h5">
                   {backingPerHec ? formatCurrency(backingPerHec, 2) : <Skeleton type="text" />}
@@ -177,12 +177,12 @@ function TreasuryDashboard() {
                   Current Index
                   <InfoTooltip
                     message={
-                      "The current index tracks the amount of sPAPA accumulated since the beginning of staking. Basically, how much sPAPA one would have if they staked and held a single PAPA from day 1."
+                      "The current index tracks the amount of sHocus accumulated since the beginning of staking. Basically, how much sHocus one would have if they staked and held a single Hocus from day 1."
                     }
                   />
                 </Typography>
                 <Typography variant="h5">
-                  {currentIndex ? trim(currentIndex, 2) + " sPAPA" : <Skeleton type="text" />}
+                  {currentIndex ? trim(currentIndex, 2) + " sHocus" : <Skeleton type="text" />}
                 </Typography>
               </Box>
             </Box>

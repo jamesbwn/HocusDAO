@@ -86,7 +86,7 @@ function Calculator() {
                                 <Grid container spacing={2}>
                                     <Grid item xs={12} sm={4} md={4} lg={4}>
                                         <Box className="calculator-card-apy">
-                                            <Typography variant="h5" color="textSecondary">PAPA Price</Typography>
+                                            <Typography variant="h5" color="textSecondary">Hocus Price</Typography>
                                             <Typography variant="h4">{isAppLoading ? <Skeleton width="100px" /> : `$${trimeMarketPrice}`}</Typography>
                                         </Box>
                                     </Grid>
@@ -100,8 +100,8 @@ function Calculator() {
                                     </Grid>
                                     <Grid item xs={6} sm={4} md={4} lg={4}>
                                         <Box className="calculator-card-index">
-                                            <Typography variant="h5" color="textSecondary">Your sPAPA Balance</Typography>
-                                            <Typography variant="h4">{isAppLoading ? <Skeleton width="100px" /> : <>{trimmedsHecBalance} sPAPA</>}</Typography>
+                                            <Typography variant="h5" color="textSecondary">Your sHocus Balance</Typography>
+                                            <Typography variant="h4">{isAppLoading ? <Skeleton width="100px" /> : <>{trimmedsHecBalance} sHocus</>}</Typography>
                                         </Box>
                                     </Grid>
                                 </Grid>
@@ -114,7 +114,7 @@ function Calculator() {
                                     <Grid container spacing={3}>
                                         <Grid item xs={12} sm={6}>
                                             <Box className="calculator-card-action-area-inp-wrap">
-                                                <Typography variant="h6">sPAPA Amount</Typography>
+                                                <Typography variant="h6">sHocus Amount</Typography>
                                                 <OutlinedInput
                                                     type="number"
                                                     placeholder="Amount"
@@ -154,7 +154,7 @@ function Calculator() {
                                         </Grid>
                                         <Grid item xs={12} sm={6}>
                                             <Box className="calculator-card-action-area-inp-wrap">
-                                                <Typography variant="h6">PAPA price at purchase ($)</Typography>
+                                                <Typography variant="h6">Hocus price at purchase ($)</Typography>
                                                 <OutlinedInput
                                                     type="number"
                                                     placeholder="Amount"
@@ -174,7 +174,7 @@ function Calculator() {
                                         </Grid>
                                         <Grid item xs={12} sm={6}>
                                             <Box className="calculator-card-action-area-inp-wrap">
-                                                <Typography variant="h6">Future PAPA market price ($)</Typography>
+                                                <Typography variant="h6">Future Hocus market price ($)</Typography>
                                                 <OutlinedInput
                                                     type="number"
                                                     placeholder="Amount"
@@ -208,8 +208,8 @@ function Calculator() {
                                         <Typography>{isAppLoading ? <Skeleton width="80px" /> : <>${calcCurrentWealth()}</>}</Typography>
                                     </Box>
                                     <Box className="data-row">
-                                        <Typography>PAPA rewards estimation</Typography>
-                                        <Typography>{isAppLoading ? <Skeleton width="80px" /> : <>{rewardsEstimation} PAPA</>}</Typography>
+                                        <Typography>Hocus rewards estimation</Typography>
+                                        <Typography>{isAppLoading ? <Skeleton width="80px" /> : <>{rewardsEstimation} Hocus</>}</Typography>
                                     </Box>
                                     <Box className="data-row">
                                         <Typography>Potential return</Typography>
