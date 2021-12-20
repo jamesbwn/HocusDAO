@@ -3,6 +3,7 @@ import { addresses } from "src/constants";
 
 import { ReactComponent as DaiImg } from "src/assets/tokens/DAI.svg";
 import { ReactComponent as HecDaiimg } from "src/assets/tokens/HEC-DAI.svg";
+import { ReactComponent as HocusDaiimg } from "src/assets/tokens/HOCUS-DAI.svg";
 import { ReactComponent as PAPAMimimg } from "src/assets/tokens/PAPA-MIM.svg";
 import { ReactComponent as wAVAXImg } from "src/assets/tokens/wAVAX.svg";
 import { ReactComponent as UsdcImg } from "src/assets/tokens/USDC.svg";
@@ -111,7 +112,7 @@ export const hocus_dai = new LPBond({
   name: "hocus_dai_lp",
   displayName: "HOCUS-DAI LP",
   bondToken: "DAI",
-  bondIconSvg: HecDaiimg,
+  bondIconSvg: HocusDaiimg,
   bondContractABI: BondHecDaiContract,
   reserveContract: ReserveHecDaiContract,
   networkAddrs: {
