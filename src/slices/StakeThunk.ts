@@ -45,8 +45,8 @@ export const changeApproval = createAsyncThunk(
     }
 
     const signer = provider.getSigner();
-    const hecContract = new ethers.Contract(addresses[networkID].PAPA_ADDRESS as string, ierc20Abi, signer);
-    const shecContract = new ethers.Contract(addresses[networkID].SPAPA_ADDRESS as string, ierc20Abi, signer);
+    const hecContract = new ethers.Contract(addresses[networkID].HOCUS_ADDRESS as string, ierc20Abi, signer);
+    const shecContract = new ethers.Contract(addresses[networkID].SHOCUS_ADDRESS as string, ierc20Abi, signer);
     const oldshecContract = new ethers.Contract(addresses[networkID].OLD_SHEC_ADDRESS as string, ierc20Abi, signer);
     let approveTx;
     let stakeAllowance = await hecContract.allowance(address, addresses[networkID].STAKING_HELPER_ADDRESS);

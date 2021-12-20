@@ -23,6 +23,7 @@ export function BondDataCard({ bond }) {
     return state.app.stakingRebase;
   });
   const stakingRebasePercentage = trim(stakingRebase * 1200, 2);
+  
   return (
     <Slide direction="up" in={true}>
       <Paper id={`${bond.name}--bond`} className="bond-data-card hec-card">

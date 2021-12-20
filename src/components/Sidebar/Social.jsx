@@ -12,19 +12,19 @@ export default function Social() {
         <SvgIcon color="primary" component={GitHub} />
       </Link> */}
 
-      <Link href="https://t.me/papadaoofficial" target="_blank">
+      <Link href="" target="_blank">
         <SvgIcon color="primary" component={Telegram} />
       </Link>
 
-      <Link href="https://medium.com/@PAPADAO" target="_blank">
+      <Link href="" target="_blank">
         <SvgIcon color="primary" component={Medium} />
       </Link>
 
-      <Link href="https://twitter.com/PapaDAOofficial" target="_blank">
+      <Link href="" target="_blank">
         <SvgIcon color="primary" component={Twitter} />
       </Link>
 
-      <Link href="https://discord.gg/7tGpUx3xYD" target="_blank">
+      <Link href="" target="_blank">
         <SvgIcon color="primary" component={Discord} />
       </Link>
     </div>

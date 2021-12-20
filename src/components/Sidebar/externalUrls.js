@@ -10,7 +10,7 @@ import { AccountBalanceOutlined, MonetizationOnOutlined } from "@material-ui/ico
 const externalUrls = [
   {
     title: "Buy on Trader Joe",
-    url: "https://traderjoexyz.com/#/trade?inputCurrency=&outputCurrency=0x70b33ebC5544C12691d055b49762D0F8365d99Fe",
+    url: "https://traderjoexyz.com/#/trade?inputCurrency=&outputCurrency=0x74572964d285E2f82940ccE11f1D55a1d168818f",
     icon: <SvgIcon viewBox="0 0 64 64" color="primary" component={TraderJoeIcon} />,
   },
   // {
@@ -40,7 +40,7 @@ const externalUrls = [
   // },
   {
     title: "Docs",
-    url: "https://papadao.gitbook.io/papadao/papa-dao/introduction",
+    url: "",
     icon: <SvgIcon color="primary" component={DocsIcon} />,
   },
 ];

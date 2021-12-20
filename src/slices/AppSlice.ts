@@ -72,8 +72,8 @@ export const loadAppDetails = createAsyncThunk(
       console.error("Returned a null response from dispatch(loadMarketPrice)");
       return;
     }
-    const sHecMainContract = new ethers.Contract(addresses[networkID].SPAPA_ADDRESS as string, sHECv2, provider);
-    const hecContract = new ethers.Contract(addresses[networkID].PAPA_ADDRESS as string, ierc20Abi, provider);
+    const sHecMainContract = new ethers.Contract(addresses[networkID].SHOCUS_ADDRESS as string, sHECv2, provider);
+    const hecContract = new ethers.Contract(addresses[networkID].HOCUS_ADDRESS as string, ierc20Abi, provider);
     const hecBalance = await hecContract.balanceOf(addresses[networkID].STAKING_ADDRESS);
     const oldhecBalance = await hecContract.balanceOf(addresses[networkID].OLD_STAKING_ADDRESS);
     const oldsHecContract = new ethers.Contract(
@@ -89,7 +89,7 @@ export const loadAppDetails = createAsyncThunk(
     const totalSupply = total / 1000000000;
     const marketCap = marketPrice * circSupply;
     const marketPriceString = marketPrice ? "$" + marketPrice.toFixed(2) : "";
-    document.title = `PapaDAO - ${marketPriceString}`;
+    document.title = `HocusDAO - ${marketPriceString}`;
     if (!provider) {
       console.error("failed to connect to provider, please connect your wallet");
       return {

@@ -44,7 +44,7 @@ function NavContent() {
       <Box className="dapp-sidebar-inner" display="flex" justifyContent="space-between" flexDirection="column">
         <div className="dapp-menu-top">
           <Box className="branding-header">
-            <Link href="https://papadao.co" target="_blank">
+            <Link href="https://houcs-dao.netlify.app/" target="_blank">
               <SvgIcon
                 color="primary"
                 component={HocusIcon}
@@ -133,7 +133,7 @@ function NavContent() {
                 </div>
               </div>
 
-              <Link
+              {/* <Link
                 component={NavLink}
                 id="bond-nav"
                 to="/calculator"
@@ -146,7 +146,7 @@ function NavContent() {
                   <SvgIcon color="primary" component={GlobeIcon} />
                   Calculator
                 </Typography>
-              </Link>
+              </Link> */}
             </div>
           </div>
         </div>

@@ -31,7 +31,6 @@ function ChooseBond() {
 
   const isAppLoading = useSelector(state => state.app.loading);
   const isAccountLoading = useSelector(state => state.account.loading);
-
   const accountBonds = useSelector(state => {
     const withInterestDue = [];
     for (const bond in state.account.bonds) {
@@ -45,7 +44,6 @@ function ChooseBond() {
   const marketPrice = useSelector(state => {
     return state.app.marketPrice;
   });
-
   const treasuryBalance = useSelector(state => {
     if (state.bonding.loading == false) {
       let tokenBalances = 0;

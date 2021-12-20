@@ -11,9 +11,9 @@ import { IBaseAddressAsyncThunk, ICalcUserBondDetailsAsyncThunk } from "./interf
 export const getBalances = createAsyncThunk(
   "account/getBalances",
   async ({ address, networkID, provider }: IBaseAddressAsyncThunk) => {
-    const hecContract = new ethers.Contract(addresses[networkID].PAPA_ADDRESS as string, ierc20Abi, provider);
+    const hecContract = new ethers.Contract(addresses[networkID].HOCUS_ADDRESS as string, ierc20Abi, provider);
     const hecBalance = await hecContract.balanceOf(address);
-    const shecContract = new ethers.Contract(addresses[networkID].SPAPA_ADDRESS as string, ierc20Abi, provider);
+    const shecContract = new ethers.Contract(addresses[networkID].SHOCUS_ADDRESS as string, ierc20Abi, provider);
     const shecBalance = await shecContract.balanceOf(address);
 
     return {
@@ -39,11 +39,11 @@ export const loadAccountDetails = createAsyncThunk(
     const daiContract = new ethers.Contract(addresses[networkID].MIM_ADDRESS as string, ierc20Abi, provider);
     const daiBalance = await daiContract.balanceOf(address);
 
-    const hecContract = new ethers.Contract(addresses[networkID].PAPA_ADDRESS as string, ierc20Abi, provider);
+    const hecContract = new ethers.Contract(addresses[networkID].HOCUS_ADDRESS as string, ierc20Abi, provider);
     hecBalance = await hecContract.balanceOf(address);
     stakeAllowance = await hecContract.allowance(address, addresses[networkID].STAKING_HELPER_ADDRESS);
 
-    const shecContract = new ethers.Contract(addresses[networkID].SPAPA_ADDRESS as string, sHECv2, provider);
+    const shecContract = new ethers.Contract(addresses[networkID].SHOCUS_ADDRESS as string, sHECv2, provider);
     shecBalance = await shecContract.balanceOf(address);
     unstakeAllowance = await shecContract.allowance(address, addresses[networkID].STAKING_ADDRESS);
 

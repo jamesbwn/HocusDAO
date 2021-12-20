@@ -33,8 +33,8 @@ export const dai = new StableBond({
   bondContractABI: DaiBondContract,
   networkAddrs: {
     [NetworkID.Mainnet]: {
-      bondAddress: "0x789cCA841CdC2a77dDEaBC0A9Fdb63FAE6E1C99D",
-      reserveAddress: "0xbA7dEebBFC5fA1100Fb055a87773e1E99Cd3507a",
+      bondAddress: "0xd379f598eD15648f1FE9A09f606934B2e8181Eb1",
+      reserveAddress: "0xd586E7F844cEa2F87f50152665BCbc2C279D8d70",
     },
     [NetworkID.Testnet]: {
       bondAddress: "0xDea5668E815dAF058e3ecB30F645b04ad26374Cf",
@@ -110,14 +110,14 @@ export const dai = new StableBond({
 export const hocus_dai = new LPBond({
   name: "hocus_dai_lp",
   displayName: "HOCUS-DAI LP",
-  bondToken: "HOCUS DAI LP",
+  bondToken: "DAI",
   bondIconSvg: HecDaiimg,
   bondContractABI: BondHecDaiContract,
   reserveContract: ReserveHecDaiContract,
   networkAddrs: {
     [NetworkID.Mainnet]: {
-      bondAddress: "0x35B912024f639757bE4f1A11e4420412af34E661",
-      reserveAddress: "0xA03a99CD3d553fE9EbBcCecAbcB8c47100482F72",
+      bondAddress: "0x215181024f9406644412e9160F4422CDd15cBEA5",
+      reserveAddress: "0xda135847d2eaa5805cccf2da9c1d541e99a60d5c",
     },
     [NetworkID.Testnet]: {
       bondAddress: "0xcF449dA417cC36009a1C6FbA78918c31594B9377",
@@ -131,13 +131,13 @@ export const hocus_dai = new LPBond({
 export const hocus_mim = new LPBond({
   name: "hocus_mim_lp",
   displayName: "HOCUS-MIM LP",
-  bondToken: "HOCUS MIM LP",
+  bondToken: "MIM",
   bondIconSvg: PAPAMimimg,
   bondContractABI: BondHecDaiContract,
   reserveContract: ReserveHecDaiContract,
   networkAddrs: {
     [NetworkID.Mainnet]: {
-      bondAddress: "0x50dbed4742Bf180eeAFd9a936f40FFc7Fd9DA9df",
+      bondAddress: "0x10BEb3286258C9F601928B8314f27a91fe83ed4d",
       reserveAddress: "0xc6fe703ef2dfc165bec01080dadc8d70f75fe395",
     },
     [NetworkID.Testnet]: {

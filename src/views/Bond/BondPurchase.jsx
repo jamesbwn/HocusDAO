@@ -44,6 +44,7 @@ function BondPurchase({ bond, slippage, recipientAddress }) {
   };
 
   async function onBond() {
+    console.log('debug quantity', quantity)
     if (quantity === "") {
       dispatch(error("Please enter a value!"));
     } else if (isNaN(quantity)) {

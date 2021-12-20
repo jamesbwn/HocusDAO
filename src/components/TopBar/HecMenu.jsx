@@ -55,8 +55,8 @@ function HecMenu() {
 
   const networkID = chainID;
 
-  const SPAPA_ADDRESS = addresses[networkID].SPAPA_ADDRESS;
-  const PAPA_ADDRESS = addresses[networkID].PAPA_ADDRESS;
+  const SHOCUS_ADDRESS = addresses[networkID].SHOCUS_ADDRESS;
+  const HOCUS_ADDRESS = addresses[networkID].HOCUS_ADDRESS;
   const USDC_ADDRESS = addresses[networkID].USDC_ADDRESS;
 
   const handleClick = event => {
@@ -84,7 +84,7 @@ function HecMenu() {
               <Paper className="hec-menu" elevation={1}>
                 <Box component="div" className="buy-tokens">
                   <Link
-                    href={`https://traderjoexyz.com/#/trade?inputCurrency=&outputCurrency=${PAPA_ADDRESS}`}
+                    href={`https://traderjoexyz.com/#/trade?inputCurrency=&outputCurrency=${HOCUS_ADDRESS}`}
                     target="_blank"
                     rel="noreferrer"
                   >
@@ -96,7 +96,7 @@ function HecMenu() {
                   </Link>
 
                   {/* <Link
-                    href={`https://swap.spiritswap.finance/#/add/${USDC_ADDRESS}/${PAPA_ADDRESS}`}
+                    href={`https://swap.spiritswap.finance/#/add/${USDC_ADDRESS}/${HOCUS_ADDRESS}`}
                     target="_blank"
                     rel="noreferrer"
                   >
@@ -113,7 +113,7 @@ function HecMenu() {
                     <Divider color="secondary" />
                     <p>ADD TOKEN TO WALLET</p>
                     <Box display="flex" flexDirection="row" justifyContent="space-between">
-                      <Button variant="contained" color="secondary" onClick={addTokenToWallet("PAPA", PAPA_ADDRESS)}>
+                      <Button variant="contained" color="secondary" onClick={addTokenToWallet("Hocus", HOCUS_ADDRESS)}>
                         <SvgIcon
                           component={papaTokenImg}
                           viewBox="0 0 32 32"
@@ -121,7 +121,7 @@ function HecMenu() {
                         />
                         <Typography variant="body1">Hocus</Typography>
                       </Button>
-                      <Button variant="contained" color="secondary" onClick={addTokenToWallet("sPAPA", SPAPA_ADDRESS)}>
+                      <Button variant="contained" color="secondary" onClick={addTokenToWallet("sHocus", SHOCUS_ADDRESS)}>
                         <SvgIcon
                           component={spapaTokenImg}
                           viewBox="0 0 100 100"
