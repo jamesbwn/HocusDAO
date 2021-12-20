@@ -133,7 +133,7 @@ function NavContent() {
                 </div>
               </div>
 
-              {/* <Link
+              <Link
                 component={NavLink}
                 id="bond-nav"
                 to="/calculator"
@@ -146,7 +146,7 @@ function NavContent() {
                   <SvgIcon color="primary" component={GlobeIcon} />
                   Calculator
                 </Typography>
-              </Link> */}
+              </Link>
             </div>
           </div>
         </div>
