@@ -20,11 +20,11 @@ export default function Social() {
         <SvgIcon color="primary" component={Medium} />
       </Link>
 
-      <Link href="" target="_blank">
+      <Link href="https://twitter.com/@HocusDao" target="_blank">
         <SvgIcon color="primary" component={Twitter} />
       </Link>
 
-      <Link href="" target="_blank">
+      <Link href="https://discord.gg/yuQG5MnHF2" target="_blank">
         <SvgIcon color="primary" component={Discord} />
       </Link>
     </div>
