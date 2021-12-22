@@ -196,7 +196,7 @@ function Calculator() {
                                 </Box>
                                 <Box className="calculator-days-slider-wrap">
                                     <Typography >{`${days} day${days > 1 ? "s" : ""}`}</Typography>
-                                    <Slider className="calculator-days-slider" min={1} max={365} value={days} onChange={(e, newValue) => setDays(newValue)} />
+                                    <Slider className="calculator-days-slider" min={1} max={30} value={days} onChange={(e, newValue) => setDays(newValue)} />
                                 </Box>
                                 <Box className="calculator-user-data">
                                     <Box className="data-row">
@@ -216,7 +216,7 @@ function Calculator() {
                                         <Typography>{isAppLoading ? <Skeleton width="80px" /> : <>${potentialReturn}</>}</Typography>
                                     </Box>
                                     <Box className="data-row">
-                                        <Typography>Potential number of Tesla Roadsters</Typography>
+                                        <Typography>Road to $1M Milion </Typography>
                                         <Typography>{isAppLoading ? <Skeleton width="80px" /> : <>{Math.floor(Number(potentialReturn) / 220000)}</>}</Typography>
                                     </Box>
                                 </Box>
