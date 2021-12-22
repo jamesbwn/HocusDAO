@@ -43,23 +43,25 @@ export const dai = new StableBond({
     },
   },
 });
-// export const mim = new StableBond({
-//   name: "mim",
-//   displayName: "MIM",
-//   bondToken: "MIM",
-//   bondIconSvg: MimImg,
-//   bondContractABI: DaiBondContract,
-//   networkAddrs: {
-//     [NetworkID.Mainnet]: {
-//       bondAddress: "0x654d5796B2C70D24eD7402e87D8a72BddF87ccca",
-//       reserveAddress: "0x130966628846bfd36ff31a822705796e8cb8c18d",
-//     },
-//     [NetworkID.Testnet]: {
-//       bondAddress: "0xDea5668E815dAF058e3ecB30F645b04ad26374Cf",
-//       reserveAddress: "0xB2180448f8945C8Cc8AE9809E67D6bd27d8B2f2C",
-//     },
-//   },
-// });
+
+export const mim = new StableBond({
+  name: "mim",
+  displayName: "MIM",
+  bondToken: "MIM",
+  bondIconSvg: MimImg,
+  bondContractABI: DaiBondContract,
+  networkAddrs: {
+    [NetworkID.Mainnet]: {
+      bondAddress: "0x6f6613ee5F438A7C56686f28077326Dfa8f76dFC",
+      reserveAddress: "0x130966628846bfd36ff31a822705796e8cb8c18d",
+    },
+    [NetworkID.Testnet]: {
+      bondAddress: "0xDea5668E815dAF058e3ecB30F645b04ad26374Cf",
+      reserveAddress: "0xB2180448f8945C8Cc8AE9809E67D6bd27d8B2f2C",
+    },
+  },
+});
+
 // export const usdt = new StableBond({
 //   name: "usdt",
 //   displayName: "USDT",
@@ -153,7 +155,7 @@ export const hocus_mim = new LPBond({
 // Is it a stableCoin bond? use `new StableBond`
 // Is it an LP Bond? use `new LPBond`
 // Add new bonds to this array!!
-export const allBonds = [dai, hocus_dai, hocus_mim];
+export const allBonds = [dai, mim, hocus_dai, hocus_mim];
 export const allBondsMap = allBonds.reduce((prevVal, bond) => {
   return { ...prevVal, [bond.name]: bond };
 }, {});
