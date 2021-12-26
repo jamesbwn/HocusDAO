@@ -128,7 +128,7 @@ export const hocus_dai = new LPBond({
     },
   },
   lpUrl:
-    "https://traderjoexyz.com/#/pool/0x74572964d285E2f82940ccE11f1D55a1d168818f/0xbA7dEebBFC5fA1100Fb055a87773e1E99Cd3507a",
+    "https://traderjoexyz.com/#/pool/0x790c7f6b9aa85a23B8fD13a95Fc25b1183366952/0xbA7dEebBFC5fA1100Fb055a87773e1E99Cd3507a",
 });
 
 export const hocus_mim = new LPBond({
@@ -149,7 +149,7 @@ export const hocus_mim = new LPBond({
     },
   },
   lpUrl:
-    "https://traderjoexyz.com/#/pool/0x74572964d285E2f82940ccE11f1D55a1d168818f/0x130966628846BFd36ff31a822705796e8cb8C18D",
+    "https://traderjoexyz.com/#/pool/0x790c7f6b9aa85a23B8fD13a95Fc25b1183366952/0x130966628846BFd36ff31a822705796e8cb8C18D",
 });
 // HOW TO ADD A NEW BOND:
 // Is it a stableCoin bond? use `new StableBond`

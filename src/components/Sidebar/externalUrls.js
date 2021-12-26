@@ -10,7 +10,7 @@ import { AccountBalanceOutlined, MonetizationOnOutlined } from "@material-ui/ico
 const externalUrls = [
   {
     title: "Buy on Trader Joe",
-    url: "https://traderjoexyz.com/#/trade?inputCurrency=&outputCurrency=0x74572964d285E2f82940ccE11f1D55a1d168818f",
+    url: "https://traderjoexyz.com/#/trade?inputCurrency=&outputCurrency=0x790c7f6b9aa85a23B8fD13a95Fc25b1183366952",
     icon: <SvgIcon viewBox="0 0 64 64" color="primary" component={TraderJoeIcon} />,
   },
   // {
